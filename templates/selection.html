@@ -3,17 +3,57 @@
     <head>
         <title>Selection</title>
         <ul>
-            <li><a href="http://127.0.0.1:25000/">Home Page</a></li>
-            <li><a href="http://127.0.0.1:25000/selection">Selection</a></li>
+            <li><a href="http://127.0.0.1:24000/">Home Page</a></li>
+            <li><a href="http://127.0.0.1:24000/selection">Selection</a></li>
         </ul>
         <h1>Selection</h1>
         <body>
             <p>Unfortunately, we only have a few items available. Hoperfully that changes soon! </p>
             <figure>
-                <img src="https://i.etsystatic.com/20195958/r/il/bc1d04/3519305980/il_fullxfull.3519305980_90xt.jpg" alt="The Smiths The Queen is Dead T-shirt" width=800 height=600>
-                <figcaption>The Smiths - The Queen Is Dead</figcaption>
-                <figcaption>$12.99</figcaption>
+                <img src="../static/TheQueenIsDead.jpg" alt="The Smiths The Queen is Dead T-shirt" width=400 height=300>
+                <figcaption>The Smiths - The Queen Is Dead <br> 
+                $7.99 <br> </figcaption>
             </figure>
+            <label for="size">Choose a size:</label>
+            <select>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="x-large">XL</option>
+            </select>
+            <label for="quantity">QTY:</label>
+            <input type="number" id="qty" name="qty" min="1">
+            <input type="button" onclick="alert('Your order has been added to the cart!')" value="Add to Cart">
+            <figure>
+                <img src="../static/collegedropout.jpg" alt="Kanye West The College Dropout T-shirt" width=400 height=300>
+                <figcaption>Kanye West - The College Dropout <br> 
+                $8.99 <br> </figcaption>
+            </figure>
+            <label for="size">Choose a size:</label>
+            <select>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="x-large">XL</option>
+            </select>
+            <label for="quantity">QTY:</label>
+            <input type="number" id="qty" name="qty" min="1">
+            <input type="button" onclick="alert('Your order been added to the cart!')" value="Add to Cart">
+            <figure>
+                <img src="../static/twice.jpg" alt="Twice Fourth World Tour T-shirt" width=400 height=300>
+                <figcaption>Twice - Fourth World Tour <br> 
+                $10.99 <br> </figcaption>
+            </figure>
+            <label for="size">Choose a size:</label>
+            <select>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="x-large">XL</option>
+            </select>
+            <label for="quantity">QTY:</label>
+            <input type="number" id="qty" name="qty" min="1">
+            <input type="button" onclick="alert('Your order been added to the cart!')" value="Add to Cart">
         </body>
     </head>
 </html>

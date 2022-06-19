@@ -7,11 +7,19 @@
             <p> Welcome to the home page!</p>
             <p>This is our t-shirt business. We're fairly new, but we are excited 
                 to bring to you quality t-shirts! </p>
-            <p>Thank you for stopping by!</p>
+            {% with messages = get_flashed_messages() %}
+                {% if messages%}
+                    {% for msg in messages %}
+                        <p><b>{{msg}}</b></p>
+                    {% endfor %}
+                {% endif%}
+            {% endwith %}
             <ul>
-                <li><a href="http://127.0.0.1:25000/">Home Page</a></li>
-                <li><a href="http://127.0.0.1:25000/selection">Selection</a></li>
+                <li><a href="http://127.0.0.1:24000/">Home Page</a></li>
+                <li><a href="http://127.0.0.1:24000/selection">Selection</a></li>
+                <li><a href="http://127.0.0.1:24000/sign-up">Sign-up</a></li>
             </ul>
+            <p>Thank you for stopping by!</p>
         </body>
     </head>
 </html>

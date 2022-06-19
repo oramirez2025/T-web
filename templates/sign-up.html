@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-up Page</title>
+        <body>
+            <h1>Sign-up Page</h1>
+            <ul>
+                <li><a href="http://127.0.0.1:24000/">Home Page</a></li>
+                <li><a href="http://127.0.0.1:24000/log-in">Log-in</a></li>
+            </ul>
+            {% with messages = get_flashed_messages() %}
+                {% if messages%}
+                    {% for msg in messages %}
+                        <p><b>{{msg}}</b></p>
+                    {% endfor %}
+                {% endif%}
+            {% endwith %}
+            <form action = "#", method = "post">
+                <label for="email">Email:</label><br>
+                <input type="text"  name="email" value="{{email if email}}"><br>
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password"><br><br>
+                <input type="submit" value="Submit"/>
+            </form>
+        </body>
+    </head>
+</html>
